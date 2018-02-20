@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 15.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hwapp", "hwapp.csproj", "{807660F0-5263-4195-B9FA-5E39ADF2D17C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{807660F0-5263-4195-B9FA-5E39ADF2D17C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{807660F0-5263-4195-B9FA-5E39ADF2D17C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{807660F0-5263-4195-B9FA-5E39ADF2D17C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{807660F0-5263-4195-B9FA-5E39ADF2D17C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+/Users/jon/Documents/Projects/hwapp/bin/Debug/netcoreapp1.1/hwapp.deps.json
+/Users/jon/Documents/Projects/hwapp/bin/Debug/netcoreapp1.1/hwapp.runtimeconfig.json
+/Users/jon/Documents/Projects/hwapp/bin/Debug/netcoreapp1.1/hwapp.runtimeconfig.dev.json
+/Users/jon/Documents/Projects/hwapp/bin/Debug/netcoreapp1.1/hwapp.dll
+/Users/jon/Documents/Projects/hwapp/bin/Debug/netcoreapp1.1/hwapp.pdb
+/Users/jon/Documents/Projects/hwapp/obj/Debug/netcoreapp1.1/hwapp.AssemblyInfo.cs
+/Users/jon/Documents/Projects/hwapp/obj/Debug/netcoreapp1.1/hwapp.dll
+/Users/jon/Documents/Projects/hwapp/obj/Debug/netcoreapp1.1/hwapp.pdb
+/Users/jon/Documents/Projects/hwapp/obj/Debug/netcoreapp1.1/hwapp.csprojResolveAssemblyReference.cache
+/Users/jon/Documents/Projects/hwapp/obj/Debug/netcoreapp1.1/hwapp.csproj.CoreCompileInputs.cache
