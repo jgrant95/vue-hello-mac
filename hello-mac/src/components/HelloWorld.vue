@@ -1,21 +1,26 @@
 <template>
-  <div>
+  <div style="margin-top: 50px;">
     <div class="card">
       <div class="title">
         {{ msg }}
       </div>
-
       <div class="review-wrapper">
         <input v-model="review.title" placeholder="Title" class="review-item">
         <input v-model="review.place" placeholder="Place" class="review-item">
         <textarea v-model="review.content" placeholder="Review" class="review-item"></textarea>
-      </div>    
+        <StarRating/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import StarRating from './StarRating'
+
 export default {
+  components: {
+    StarRating
+  },
   name: 'HelloWorld',
   data () {
     return {
@@ -45,7 +50,7 @@ a {
 
 .title {
   top: -40px;
-  background-color: #41b883;
+  background-color: #2f465a;
   position: relative;
   width: 200px;
   border-radius: 2px;
@@ -69,9 +74,8 @@ a {
 }
 
 .review-wrapper {
-    top: -20px;  position: relative;
-
-
+  top: -20px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +93,7 @@ a {
 
 textarea:focus, input:focus{
     outline: solid;
-    outline-color: #41b883b5;
+    outline-color: #2f465a;
     outline-offset: 2px;
     outline-width: 1px;
 }

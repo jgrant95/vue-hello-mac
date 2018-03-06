@@ -1,113 +1,64 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
+    <ul class="star-rating-container">
+      <li class="star" v-for="(star, index) in stars" :key="index" v-on:click="updateStar(index)">
+        <icon name="star" scale="2" :class="{ 'selected': star, 'disabled': disabled }" ></icon>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import 'vue-awesome/icons'
+import Icon from 'vue-awesome/components/Icon'
+
 export default {
-  name: 'HelloWorld',
+  name: 'StarRating',
+  components: {
+    Icon
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      stars: [true, true, true, true, false],
+      disabled: false
+    }
+  },
+  methods: {
+    test: function () {
+      console.log('testttttttt')
+    },
+    updateStar: function (index) {
+      if (this.disabled) { return }
+
+      this.stars.fill(false)
+      for (let i = 0; i <= index; i++) {
+        this.$set(this.stars, i, true)
+      }
     }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+<style scoped lang="scss">
+.star-rating-container {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+    .star {
+      padding: 1px;
+      color: #ddd;
+      list-style-type: none;
+      display: inline-block;
+      cursor: pointer;
+
+      .selected {
+        fill: #f9d20a;
+      }
+      .disabled{
+        fill: rgba(128, 128, 128, 0.3);
+      }
+    }
 }
 </style>

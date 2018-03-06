@@ -1,16 +1,30 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <HeaderBar/>
+
+    <HeroSearch/>
+
+    <HomeContent/>
+
+    <Footer/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
+import StarRating from './components/StarRating'
+import HeaderBar from './components/HeaderBar'
+import HeroSearch from './components/HeroSearch'
+import HomeContent from './components/HomeContent'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    StarRating,
+    HeaderBar,
+    HeroSearch,
+    HomeContent
   }
 }
 </script>
@@ -22,6 +36,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
