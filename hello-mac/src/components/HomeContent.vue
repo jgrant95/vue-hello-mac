@@ -82,8 +82,8 @@ $content-grid-spacing: 1.0em;
     grid-row-end: 5;
     .text{
         justify-content: space-evenly;
-        align-items: center; 
-        font-size: 1.3em; 
+        align-items: center;
+        font-size: 1.3em;
         margin: auto 0;
     }
 }

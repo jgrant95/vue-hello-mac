@@ -39,14 +39,14 @@ export default {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  
+
   .gradient-item {
     flex: 1;
     width: 100%;
     margin: 8px 0;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     border-radius: 4px;
     font-size: 1.5em;
   }
